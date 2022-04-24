@@ -1,0 +1,147 @@
+:root {
+    --text-color: #cacaca;
+    --background-color: #000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/1634514713_335_Hinh-anh-dong-Powerpoint-tam-biet-dep-va-chuyen-nghiep.gif);
+    background-size: cover;
+}
+form{
+    position: relative;
+    width: 26%;
+    height: 70%;
+    border-radius: 5px;
+    background-color: #cacaca2e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media only screen and (max-width: 600px) {
+    form{
+        width: 80%;
+        height: 60%;
+    }
+  }
+  @media  only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+    form{
+      width: 50%;
+    }
+  }
+.title{
+    width: 100%;
+    height: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input--main{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input--form{
+    border-radius: 10px;
+    width: 90%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cacaca2e;
+}
+.input--form input{
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    background: none;
+    padding: 12px;
+    outline: none;
+    border: none;
+}
+.input--form input::placeholder{
+    color: rgb(235, 230, 230);
+}
+.input--icon{
+    padding-left: 10px;
+}
+.input--icon ion-icon{
+    color: #fff;
+    font-size: 25px;
+}
+.show--pass,.confim--pass{
+    padding-right: 15px;
+}
+.show{
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    font-size: 18px;
+}
+.show.active{
+    display: block;
+}
+.submit--form{
+    margin-top: 30px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .submit--form{
+        margin-top: 10px;
+    }
+  }
+.submit--form a
+{
+    background: #585656a8;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.submit--form a:hover{
+    background-color: #585656;
+    transition: ease-in .8s;
+}
+.confim{
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    font-size: 18px;
+}
+.confim.active{
+    display: block;
+}
+.login{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.login span{
+    color: rgb(192, 187, 187);
+}
+.login a{
+    text-decoration: none;
+}
